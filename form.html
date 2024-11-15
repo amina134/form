@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color:blue" >
+        <h1 style="color:white"> Curriculum vitae</h1>
+    </div>
+    <form method="post">
+        <fieldset>
+            <legend>informations génèrales</legend>
+            <label for="nom et prenom">Nom et prénom:</label>
+            <input type="text" placeholder="nom et prénom">
+            <label for="date de naissance">date de naissance:</label>
+            <input type="date"><br>
+                <div style="float:left;">
+                    <label for="adress">adresse:</label><br>
+                    <textarea id="adress" name="adress" rows="4" cols="30" ></textarea>
+                    <fieldset style="width:50%">
+                        <legend>état civil</legend>
+                        <input type="radio" name="etatcivil" value="celibataire" id="celibataire" /> <label for="celibataire">célibataire</label><br/>
+                        <input type="radio" name="etatcivil" value="marie" id="marie" /> <label for="marie">marié</label><br/>
+                        <input type="radio" name="etatcivil" value="divorce" id="divorce" /> <label for="divorce">divorcé</label><br/>
+                        <input type="radio" name="etatcivil" value="veuf" id="veuf" /> <label for="veuf">veuf</label>
+                    </fieldset>
+                    <label for="nombre d'enfants">nombre d'enfants:</label>
+                    <input type="number" placeholder="0">
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>cursus et compétences</legend>
+            <label for="competence">compétences</label><br>
+            <select for="cursus" name="cursus" size="4"  style="width:10%">
+                <optgroup label="Langues">
+                    <option value="Anglais">Anglais</option>
+                    <option value="Francais">Francais</option>
+                    <option value="Arabe">Arabe</option>
+                    <option value="Italien">Italien</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="diplome">Cochez vos diplomes:</label><br>
+            <input type="checkbox" name="diplome" value="licence" id="licence"><label for="licence">Licence</label><br/>
+            <input type="checkbox" name="diplome" value="maitrise" id="maitrise"><label for="maitrise">Maitrise</label><br/>
+            <input type="checkbox" name="diplome" value="mastere" id="mastere"><label for="mastere">Mastere</label><br/>
+            <input type="checkbox" name="diplome" value="doctorat" id="doctorat"><label for="doctorat">Doctorat</label><br/>
+            <p>
+                <label for="universite">à quelle université vous appartenez ?:</label><br>
+                <select name="universite" id="universite">
+                <option value="Tunis">Tunis </option> 
+                <option value="Manar">Manar </option> 
+                <option value="Carthage">Carthage </option> 
+                <option value="Sousse">Sousse </option> 
+                <option value="sfax">Sfax </option> 
+                <option value="Jendouba">Jendouba </option> 
+                <option value="Kairouan">Kairouan </option> 
+                <option value="Gabes">Gabes </option> 
+                </select><br><br>
+                <label for="myfile">Attachez un CV:</label>
+                <input type="file" id="myfile" name="myfile">
+            </p>
+        </fieldset>
+        <input type="submit" value="envoyer">
+        <input type="submit" value="effacer">
+        <input type="submit" value="afficher CV">
+
+    </form>
+
+</body>
+</html>
